@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">  
+    <title>Document</title>
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+        }
+        header{
+            background-color: rgb(251, 173, 185);
+            width: 100%;
+            height: 100px;
+            border-radius: 20px;
+        }
+
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(240, 157, 170);
+  border-radius: 20px;
+  position: sticky;
+}
+
+li {
+  float: left;
+}
+
+li a {
+    font-family: 'Cabin', sans-serif;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(238, 143, 157);
+}
+        
+        body{
+            background-color: pink;
+        }
+
+        h1{
+            font-family: 'Satisfy', cursive;
+            margin-left: 2%;
+            margin-top: 1%;
+            font-size: 80px;
+            color: white;
+            text-shadow: 5px 5px rgb(233, 196, 202);
+        }
+
+        h2{
+            
+            font-size: 50px;
+            
+            font-family: 'Cabin', sans-serif;
+        color: white;
+        background-color: pink;
+        text-shadow: 5px 5px rgb(233, 196, 202);
+        }
+
+        label{
+            
+        font-size: 30px;
+        font-family: 'Cabin', sans-serif;
+        color: white;
+        }
+
+        input{
+         
+            font-size: 30px;
+       
+        }
+
+        legend{
+            font-family: 'Cabin', sans-serif;
+            font-size: 30px;
+            color: white;
+        }
+
+        h3{
+            margin-right: 100px;
+            background-color:  rgb(251, 173, 185);
+            width: 30%;
+            height: 50px;
+            text-align: center;
+           
+            font-size: 30px;
+            font-family: 'Cabin', sans-serif;
+            color: white;
+            letter-spacing: 2px;
+            border-radius: 20px;
+        }
+
+       h4{
+        
+            font-size: 30px;
+            font-family: 'Cabin', sans-serif;
+            color: white;
+            letter-spacing: 2px;
+            border-radius: 10px;
+       }
+
+       .cake-container{
+        justify-content: right;
+       }
+       
+       .con{
+        margin-left: 40px;
+       }
+
+       footer{
+        text-align: center;
+        font-family: 'Cabin', sans-serif;
+        color: white;
+        background-color: rgb(251, 173, 185);
+        width: 100%;
+            height: 100px;
+            border-radius: 20px;
+       }
+
+       #grid{
+        display: grid;
+        grid-template-columns: 75% auto;
+       }
+
+
+       #fm{
+        width:1500px;
+        margin-left:50px;
+       }
+
+
+       #text{
+        font-size: 20px;
+        width:600px;
+        margin-top:-1700px;
+       
+        float:right;
+       }
+
+       #text>p{
+        font-family: 'Cabin', sans-serif;
+        color:white;
+       
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sweet Buns</h1>
+    </header>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    <form id="fm">
+    <h2>Cake Request Form</h2>
+    <br>
+    <div class="con">
+        <h3>Personal Information</h3>
+        <br>
+            <label for ="fname">First Name:</label>
+            <input type ="text", id="fname">
+            <br>
+            <br>
+
+            <label for ="lastname">Last Name:</label>
+            <input type="text" id="lname">
+            <br>
+            <br>
+
+            <legend></legend><br>
+                <label for="ph">Phone Number:</label>
+                <input type="number" id="ph" name="phone" value="Phone">
+                <br>
+                <br>
+    
+                <label for="em">Email:</label>
+                <input type="number" id="pph" name="Parent" value="Parent phone">
+                <br>
+                <br>
+                <label for="ad">Address:</label>
+                <input type="text" id="ad">
+                <br>
+                <br>
+                <label for="city">City:</label>
+                <input type="text" id="city">
+                <br>
+                <br>
+                <label for="st">State:</label>
+                <input type="text" id="st">
+                <br>
+                <br>
+                <label for="zip">Zip Code:</label>
+                <input type="text" id="zip">
+                <br>
+                <br>
+            <label id="dt">Date of Birth:</label>
+            <input type="date" id="dt" name="bdate">
+            <br>
+            <br>
+           
+                <legend>Gender:</legend>
+                <label for="gen">Male</label>
+                <input type="checkbox" id="gen" name="gender" value="male">
+             
+                <label for="gen">Female</label>
+                <input type="checkbox" id="gen" name="gender" value="female">
+            
+                <label for="gen">Other</label>
+                <input type="checkbox" id="gen" name="gender" value="Other">
+                <br>
+                <br>
+        <h3>Card Information</h3>
+        <br>
+        <label id="card1">VISA</label>
+        <input type="radio" id="card1">
+
+        <label id="card2">MASTERCARD</label>
+        <input type="radio" id="card2">
+
+        <label id="card3">AMERICAN EXPRESS</label>
+        <input type="radio" id="card3"><br><br>
+
+        <label id="cardnum">Card Number</label>
+        <input type="text" id="cardnum">
+        <br>
+            <br>
+        <label id="exp">Card Expiration Date</label>
+        <input type="date" id="exp" value="yyyy-mm-dd" min="2022-01-01" max="2026-12-31">
+        <br>
+        <br>
+        <label id="cvc">CVC Code</label>
+        <input type="text" id="cvc">
+        <br>
+        <br>
+        <h3>Cake Information</h3>
+        <br>
+        <label id="cake">Cake Flavor:</label>
+        <input type="text" id="cake">
+        <br>
+        <br>
+        <h4>Type of Frosting:</h4>
+        <br>
+        <label id="butter">Buttercream</label>
+        <input type="checkbox" id="butter">
+        
+        <br>
+        <label id="flat">Flat</label>
+        <input type="checkbox" id="flat">
+        <br>
+        <label id="foam">Foam</label>
+        <input type="checkbox" id="Foam">
+        <br>
+        <label id="fudge">Fudge</label>
+        <input type="checkbox" id="Foam">
+        <br>
+        <label id="glaze">Glaze</label>
+        <input type="checkbox" id="glaze">
+        <br>
+        <br>
+        <h4>Fruit topping:</h4>
+        <label id="straw">Strawberries</label>
+        <input type="checkbox" id="straw">
+        
+        <br>
+        <label id="Rasp">Raspberries</label>
+        <input type="checkbox" id="Rasp">
+        <br>
+        <label id="Banana">Banana</label>
+        <input type="checkbox" id="Banana">
+        <br>
+        <label id="blue">Blueberries</label>
+        <input type="checkbox" id="blue">
+        <br>
+        <label id="Black">Blackberries</label>
+        <input type="checkbox" id="Black">
+        
+        <br>
+        <h4>Cake Designs:</h4>
+        <label id="Fon">Fondant ($1000000000 more)</label>
+        <input type="checkbox" id="Fon">
+        <br>
+        <label id="Choc">Extra Chocolate</label>
+        <input type="checkbox" id="Choc">
+        <br>
+        <label id="Candles">Candles</label>
+        <input type="checkbox" id="Candles">
+    </div>
+
+</form>
+
+
+
+<div  id="text">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, eos culpa cupiditate blanditiis eaque debitis laborum accusantium soluta maxime quas ab! Quia praesentium culpa beatae provident consequuntur rem, labore aut!..
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, eos culpa cupiditate blanditiis eaque debitis laborum accusantium soluta maxime quas ab! Quia praesentium culpa beatae provident consequuntur rem, labore aut!..
+
+    </p>
+
+</div>
+    <footer>
+        <p>6997 N Glen Harbor Blvd, Glendale, AZ 85307</p>
+        <p>(623) 209-8045</p>
+    </footer>
+
+
+</body>
+</html>
