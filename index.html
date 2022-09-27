@@ -159,6 +159,7 @@ li a:hover {
         color:white;
        
        }
+       
     </style>
 </head>
 <body>
@@ -178,39 +179,43 @@ li a:hover {
         <h3>Personal Information</h3>
         <br>
             <label for ="fname">First Name:</label>
-            <input type ="text", id="fname">
+            <input type ="text", id="fname" pattern="^[a-zA-z]*[^0-9]" required>
             <br>
             <br>
 
             <label for ="lastname">Last Name:</label>
-            <input type="text" id="lname">
+            <input type="text" id="lname" pattern="^[a-zA-z]*[^0-9]" required>
             <br>
+        
             <br>
-
-            <legend></legend><br>
+            <legend></legend>
                 <label for="ph">Phone Number:</label>
-                <input type="number" id="ph" name="phone" value="Phone">
+                <input type="text" id="ph" name="phone" pattern="^[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                 <br>
                 <br>
     
                 <label for="em">Email:</label>
-                <input type="number" id="pph" name="Parent" value="Parent phone">
+                <input type="text" id="pph"  pattern="^[a-zA-Z0-9]+.[a-zA-Z0-9]+.[a-zA-Z]+" required>
                 <br>
                 <br>
                 <label for="ad">Address:</label>
-                <input type="text" id="ad">
+                <input type="text" id="ad" pattern="^[0-9]+\s[a-zA-Z]+\s[a-zA-Z]+\s[a-zA-Z]+\s[a-zA-z]+" required>
                 <br>
                 <br>
                 <label for="city">City:</label>
-                <input type="text" id="city">
+                <input type="text" id="city" pattern="^[a-zA-z]*[^0-9]" required>
                 <br>
                 <br>
-                <label for="st">State:</label>
-                <input type="text" id="st">
+                <label id="st">State:</label>
+                <select id="st" name="state" required>
+                    <option value="az">Arizona</option>
+                    <option value="ca">California</option>
+                    <option value="az">Nevada</option>
+                </select>
                 <br>
                 <br>
                 <label for="zip">Zip Code:</label>
-                <input type="text" id="zip">
+                <input type="text" id="zip" pattern="^[0-9]{5}" required>
                 <br>
                 <br>
             <label id="dt">Date of Birth:</label>
@@ -241,21 +246,21 @@ li a:hover {
         <input type="radio" id="card3"><br><br>
 
         <label id="cardnum">Card Number</label>
-        <input type="text" id="cardnum">
+        <input type="text" id="cardnum" pattern="^[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
         <br>
             <br>
         <label id="exp">Card Expiration Date</label>
-        <input type="date" id="exp" value="yyyy-mm-dd" min="2022-01-01" max="2026-12-31">
+        <input type="date" id="exp" value="yyyy-mm-dd" min="2022-01-01" max="2026-12-31" >
         <br>
         <br>
         <label id="cvc">CVC Code</label>
-        <input type="text" id="cvc">
+        <input type="text" id="cvc" pattern="^[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
         <br>
         <br>
         <h3>Cake Information</h3>
         <br>
         <label id="cake">Cake Flavor:</label>
-        <input type="text" id="cake">
+        <input type="text" id="cake" pattern="^[a-zA-z]*[^0-9]" required>
         <br>
         <br>
         <h4>Type of Frosting:</h4>
@@ -305,7 +310,7 @@ li a:hover {
         <label id="Candles">Candles</label>
         <input type="checkbox" id="Candles">
     </div>
-
+    <button type="submit" required>Submit</button>
 </form>
 
 
